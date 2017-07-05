@@ -4,13 +4,13 @@ source 'https://rubygems.org'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.5'
 # Use sqlite3 as the database for Active Record
-gem 'sqlite3', group: :development
+#gem 'sqlite3', group: :development
 # 本番ではpostgressを使用する
-### H.saito Add >>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
 gem 'pg'
 gem 'rails_12factor', group: :production
 gem 'puma'
-### H.saito Add <<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
 #gem 'pg', group: :production
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'

@@ -57,5 +57,5 @@ class UsersController < ApplicationController
     session[:user_id] = nil
     flash[:notice] = "ログアウトしました"
     redirect_to("/top")
-  end
-end
+  　end
+　end

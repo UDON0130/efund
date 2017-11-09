@@ -5,14 +5,8 @@
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
-   <!-- 指定されたHTMLを貼り付け、ログイン中のユーザーのidを表示してください -->
-         <% if session[:user_id] %>
-          <li>
-            現在ログインしているユーザーのid:
-            <!-- コードを追加し、ログイン中のユーザーのidを表示してください -->
-            <%= session[:user_id] %>
-          </li>
-        <% end %>
+   <!-- 指定されたHTMLを貼り付け、ログイン中のユーザーのidを表示してください-->
+       
 </head>
 <body>
 

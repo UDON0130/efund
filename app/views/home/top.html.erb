@@ -9,10 +9,12 @@
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
   </head>
   <body>
+    
+    <!-- header -->
     <header>
       <div class="container">
         <div class="header-left">
-          <img class="logo" src="http://yoshi.chu.jp/udon/wp-content/uploads/2017/07/2017y07m03d_165245916.jpg">
+          e-fund
         </div>
         
           <% if @current_user %>
@@ -20,45 +22,160 @@
           <div class="header-right">
          <%= link_to("ログアウト", "/logout", {method: :post}) %>
          </div>
+         <div class="header-right">
+           <%= link_to("e-fundとは","/#")%>
+        </div>
          <% else %>
-        <div class="header-right">
+         <div class="header-right">
            <%= link_to("ログイン","/login")%>
         </div>
         <div class="header-right">
-           
            <%= link_to("新規登録","/signup")%>
+        </div>
+        <div class="header-right">
+           <%= link_to("e-fundとは","/#")%>
         </div>
         <% end %>
       </div>
     </header>
-    <div class="top-wrapper">
-      <div class="container">
-        <h1>今すぐ大会資金を集めよう!</h1>
-       
-        <p>申請から〇日で掲載、確定後〇日以内に振り込み</p>
-       
-        <div class="btn-wrapper">
-          <a href="#" class="btn create">大会を作る</a>
-          
+    <!-- header -->
+    
+    <div id="home" class="top-section">
+      <div class="inner-bg">
+        <div class="container">
+          <div class="top-description">
+            <h2>今すぐ大会資金を集めよう!!</h2>
+            <p>申請から〇日で掲載、確定後〇日以内に振り込み</p>
+          </div>
+          <span class="btn">大会を作る</span>
         </div>
       </div>
     </div>
-    <div class="sumple-wrapper">
-       <div style="text-align:center">
+    <br><br>
+      
+         <!-- Column -->
+    <div id="columns" class="columns-section gray-section">
+      <div class="container">
         
-       </div>
-       <br /><br /><br />
-       <div class="content">
-          <h1>注目の大会</h1>
-          <br>
-          <br>
-          <h2>PC</h2>
-          <br>
-        <div class="PC">
-
-      <h2>PS4</h2>
-    </div>
-</body>
+        <div class="section-title">
+          <h2>注目の大会</h2>
+        </div>
+        
+        <div class="high-box">
+            <a href="#">
+              <div class="high-image" style="background-image: url(https://assets.change.org/photos/6/ro/qa/BnroQAafYJOzNXP-1600x900-noPad.jpg?1477703584)"></div>
+            </a>
+            <a href="#" class="high-title">第23回LoL大会</a>
+            <div></div>
+          </div>
+          </div>
+       <br>
+        
+        <div class="section-title">
+          <h3>新着の大会</h3>
+        </div>
+        <div class="wrapper-outer">
+          <div class="column-box">
+            <a href="#" class="caption">
+              <div class="column-image" style="background-image: url(http://www.epsilon-esports.com/news/wp-content/uploads/2016/07/r6s-624x351.jpg)"></div>
+            </a>
+            <a href="#" class="column-title">第8回R6S大会</a>
+            <div></div>
+          </div>
+          <div class="column-box">
+            <a href="#">
+              <div class="column-image" style="background-image: url(http://resize.blogsys.jp/803e3ba303551a2a7e69b7948ffc73160fff2970/trim1/0x113_1026x335/http://livedoor.blogimg.jp/light081215-27183/imgs/3/d/3df47aed.png)"></div>
+            </a>
+            <a href="#" class="column-title">BF1クラン戦</a>
+            <div></div>
+          </div>
+          <div class="column-box">
+            <a href="#">
+              <div class="column-image" style="background-image: url(https://i1.wp.com/fpsjp.net/wp-content/uploads/2017/04/cod-ww2-keyart.jpg?fit=720%2C405)"></div>
+            </a>
+            <a href="#" class="column-title">WW2大学対抗トーナメント</a>
+            <div></div>
+          </div>
+          
+            <div></div>
+             </div>
+        <div class="filters-wrapper">
+          <div class="filter-item-active filter-item">1</div>
+          <div class="filter-item">2</div>
+          <div class="filter-item">3</div>
+        </div>
+        
+        <div class="section-title">
+          <h3>PCの大会</h3>
+        </div>
+        <div class="wrapper-outer">
+          <div class="column-box">
+            <a href="#" class="caption">
+              <div class="column-image" style="background-image: url(https://i.ytimg.com/vi/ORW3mId0XD0/hqdefault.jpg)"></div>
+            </a>
+            <a href="#" class="column-title">第3回PUPG大会
+            </a>
+            <div></div>
+          </div>
+          <div class="column-box">
+            <a href="#">
+              <div class="column-image" style="background-image: url(http://cdn.ndtv.com/tech/gadgets/cs_go_header_valve.jpg?output-quality=80)"></div>
+            </a>
+            <a href="#" class="column-title">CSGO関東杯</a>
+            <div></div>
+          </div>
+          <div class="column-box">
+            <a href="#">
+              <div class="column-image" style="background-image: url(https://assets.change.org/photos/6/ro/qa/BnroQAafYJOzNXP-1600x900-noPad.jpg?1477703584)"></div>
+            </a>
+            <a href="#" class="column-title">第23回LoL大会</a>
+            <div></div>
+          </div>
+          </div>
+          
+        <div class="filters-wrapper">
+          <div class="filter-item-active filter-item">1</div>
+          <div class="filter-item">2</div>
+          <div class="filter-item">3</div>
+        </div>
+          
+          <div class="section-title">
+          <h3>PS4の大会</h3>
+        </div>
+        <div class="wrapper-outer">
+          <div class="column-box">
+            <a href="#" class="caption">
+              <div class="column-image" style="background-image: url(http://www.epsilon-esports.com/news/wp-content/uploads/2016/07/r6s-624x351.jpg)"></div>
+            </a>
+            <a href="#" class="column-title">第8回R6S大会</a>
+            <div></div>
+          </div>
+          <div class="column-box">
+            <a href="#">
+              <div class="column-image" style="background-image: url(http://resize.blogsys.jp/803e3ba303551a2a7e69b7948ffc73160fff2970/trim1/0x113_1026x335/http://livedoor.blogimg.jp/light081215-27183/imgs/3/d/3df47aed.png)"></div>
+            </a>
+            <a href="#" class="column-title">BF1クラン戦</a>
+            <div></div>
+          </div>
+          <div class="column-box">
+            <a href="#">
+              <div class="column-image" style="background-image: url(https://i1.wp.com/fpsjp.net/wp-content/uploads/2017/04/cod-ww2-keyart.jpg?fit=720%2C405)"></div>
+            </a>
+            <a href="#" class="column-title">WW2大学対抗トーナメント</a>
+            <div></div>
+          </div>
+          
+            <div></div>
+             </div>
+             
+        <div class="filters-wrapper">
+          <div class="filter-item-active filter-item">1</div>
+          <div class="filter-item">2</div>
+          <div class="filter-item">3</div>
+          </div>
+      <!-- Column -->
+      
+      
 <footer>
   <div class="footer-list">
     <ul>
@@ -71,5 +188,6 @@
     </ul>
   </div>
 </footer>
-  
+ 
+ </body>
 </html>

@@ -3,87 +3,24 @@ body {
   font-family: "Hiragino Kaku Gothic ProN";
 }
 
-a {
-  text-decoration: none;
-}
-
-.container {
-  width: 1170;
-  padding: 0 15px;
-  margin: 0 auto;
-}
-
-.top-wrapper {
-  padding: 80px 100px;
-  background-image: url(http://thebridge.jp/wp/wp-content/uploads/2015/04/League-of-Legends-640x347.png);
-  background-position: center;
-  background-size: cover;
-  color: white;
-  text-align: center;
-}
-
-.top-wrapper h1 {
-  
-  font-size: 45px;
-  letter-spacing: 2px;
-}
-
-.top-wrapper p {
-  opacity: 1;
-}
-
-.btn-wrapper {
-  margin: 35px 0;
-}
-
-.btn-wrapper p {
-  margin: 10px 0;
-}
-
-.create {
-  background-color: #32cd32;
-}
-
-
-.btn {
-  padding: 18px 40px;
-  color: white;
-  display: inline-block;
-  opacity: 1;
-  border-radius: 4px;
-}
-
-.btn:hover {
-  opacity: 0.9;
-}
-
-.fa {
-  margin-right: 5px;
-}
-
-.content h2{
-  text-decoration: underline;
-  
-}
-
-.PC{
-  float: left;
-}
-
-.clear{
-  clear:both;
-}
-
-
+/*-------  ここからheader  --------*/
 header {
-  height: 65px;
-  width: 100%;
-  background-color: rgba(34, 49, 52, 0.9);
+  height: 50px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #fff;
+  line-height: 50px;
+  border-bottom: 1px solid #eee;
+  z-index: 10;
 }
 
 .logo {
-  width: 60px;
-  margin-top: 20px;
+  color: #777;
+  font-weight: 700;
+  font-size: 22px;
+  font-family: 'Dosis', sans-serif;
 }
 
 .header-left {
@@ -92,9 +29,6 @@ header {
 
 .header-right {
   float: right;
-  background-color: rgba(255, 255, 255, 0.3);
-  
-  
 }
 
 .header-right:hover {
@@ -102,9 +36,9 @@ header {
 }
 
 .header-right a {
-  line-height: 65px;
+  line-height: 50px;
   padding: 0 25px;
-  color: white;
+  color: #000000;
   display: block;
 }
 
@@ -112,5 +46,148 @@ li {
   list-style: none;
   float: left;
   padding: 33px 20px;
+  }
   
+/*-------  ここまでheader  --------*/
+
+
+/*-------  ここからtop content  --------*/
+.top-section {
+  margin: 0 auto;
+  text-align: center;
+  color: #fff;
+  background-image: url("http://yoshi.chu.jp/udon/wp-content/uploads/2017/11/2017y11m16d_212757620-1.jpg");
+  background-size: cover;
 }
+
+.inner-bg {
+  padding-top: 210px;
+  padding-bottom: 120px;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.top-description {
+  margin-bottom: 20px;
+}
+
+.top-description h2 {
+  font-size: 48px;
+  margin-bottom: 30px;
+  font-weight: 400;
+}
+
+.top-description p {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 18px;
+}
+
+.btn{
+  padding: 15px 40px;
+  background-color: #5dca88;
+  border-radius: 3px;
+  cursor: pointer;
+  box-shadow: 0 7px #1a7940;
+}
+
+.btn:active {
+  position: relative;
+  top: 7px;
+  box-shadow: none;
+}
+
+/*-------  ここまでtop content  --------*/
+
+
+/*-------  ここからcolumn  --------*/
+.columns-section {
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+.filters-wrapper {
+  margin-bottom: 40px;
+}
+
+.filter-item {
+  background-color: #fff;
+  color: #444;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 16px;
+  margin: 10px 5px 0 0;
+  padding: 8px 16px;
+  display: inline-block;
+  transition: all .3s;
+}
+
+.filter-item:hover {
+  color: #fff;
+  background: #009ca8;
+}
+
+.filter-item-active {
+  background: #009ca8;
+  color: #fff;
+  cursor: default;
+}
+
+.high-box {
+  display: inline-block;
+  vertical-align: top;
+  width: 70%;
+  background-color: #fff;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  margin: 0 15px 30px;
+  padding: 7px 7px 27px;
+  }
+
+.high-title {
+  display: block;
+  margin-top: 17px;
+  font-size: 40px;
+  font-weight: 600;
+}
+
+.high-image {
+  width: 100%;
+  height: 420px;
+  background-position: center;
+  background-size: 100% auto;
+  transition: all .3s;
+}
+
+.column-box {
+  display: inline-block;
+  vertical-align: top;
+  width: 25%;
+  background-color: #fff;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  margin: 0 15px 30px;
+  padding: 7px 7px 27px;
+}
+
+.column-image {
+  width: 100%;
+  height: 220px;
+  background-position: center;
+  background-size: 100% auto;
+  transition: all .3s;
+}
+
+.column-title {
+  display: block;
+  margin-top: 17px;
+  font-size: 17px;
+  font-weight: 600;
+}
+
+
+.culom-day{
+  display: block;
+  margin-top: 17px;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+/*-------  ここまでcolumn  --------*/
+
